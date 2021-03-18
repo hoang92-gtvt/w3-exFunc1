@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra từ khóa</title>
+</head>
+<body>
+    <script>
+        let arr1=['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair','Dubhe','Regulus'];
+        let arr2=['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major','Leo'];
+        let keyWord=prompt('Nhập tên ngôi sao');
+        function findStar(star){
+            let ktr=false;
+            for (let i = 0; i <arr1.length ; i++) {
+                if(arr1[i]===star){
+                    return arr2[i];
+                    ktr=true;
+                }
+            }if(!ktr){alert('Không tìm thấy ngôi sao')}
+        }
+        findStar(keyWord);
+        alert(findStar(keyWord));
+
+    </script>
+
+</body>
+</html>

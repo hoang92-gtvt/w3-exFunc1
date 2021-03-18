@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng hai số nhập vào</title>
+</head>
+<body>
+
+    <p>Số thứ nhất <input id="number1"  type ='number' onchange="getData()"/></p>
+    <p>Số thứ hai <input  id="number2"  type ='number' onchange="getData()"/></p>
+    <p id="tong"></p>
+    <script>
+        // let a = 10;
+        // let b= 9;
+        // function changevalue(a){
+        //     a=100;
+        //     console.log(a)
+        //     b= 101;
+        //     c=200
+        // }
+        // changevalue(a);
+        // console.log(b);
+        // console.log(a);
+        // console.log(c);
+        function setSum(number1,number2){
+            // let number1= document.getElementById('number1').value;
+            // let number2= document.getElementById('number2').value;
+            if (number1>number2){
+                alert ('Số thứ nhất lớn hơn số thứ hai');
+            }else{
+                document.getElementById('tong').innerHTML= number1+number2
+                return number1+ number2;
+            }
+
+        }
+        function getData(){
+            let number1= document.getElementById('number1').value;
+            let number2= document.getElementById('number2').value;
+            setSum(number1, number2);
+        }
+
+    </script>
+</body>
+</html>
